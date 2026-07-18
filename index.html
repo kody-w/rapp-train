@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>RAPP Train — every ring, every flight, one page</title>
+<style>
+  :root { color-scheme: light dark; --accent:#3b82f6; --edge:rgba(127,127,127,.35); }
+  body { font-family:-apple-system,"Segoe UI",sans-serif; max-width:980px; margin:2rem auto; padding:0 1rem; line-height:1.5; }
+  h1 { font-size:1.7rem; margin-bottom:.2rem; } h2 { font-size:1.2rem; margin-top:2.2rem; }
+  .sub { color:#888; margin-top:0; }
+  .banner { border:1px solid var(--edge); border-left:4px solid var(--accent); border-radius:8px; padding:.8rem 1rem; margin:1.2rem 0; font-size:.95rem; }
+  .ring { border:1px solid var(--edge); border-radius:10px; padding:1rem 1.2rem; margin:1rem 0; }
+  .ring h3 { margin:.1rem 0 .2rem; display:flex; align-items:baseline; gap:.6rem; flex-wrap:wrap; }
+  .meta { font-size:.8rem; color:#888; font-weight:normal; font-family:ui-monospace,monospace; }
+  .risk { font-size:.85rem; color:#888; margin-bottom:.3rem; }
+  pre { background:rgba(127,127,127,.12); border:1px solid var(--edge); border-radius:8px; padding:.65rem .9rem; overflow-x:auto; font-size:.84rem; position:relative; margin:.4rem 0; }
+  .lbl { font-size:.78rem; color:#888; margin:.7rem 0 .15rem; text-transform:uppercase; letter-spacing:.04em; }
+  button.copy { position:absolute; top:.35rem; right:.35rem; font-size:.72rem; padding:.18rem .5rem; border-radius:6px; border:1px solid var(--edge); cursor:pointer; background:transparent; color:inherit; }
+  button.copy.ok { background:#1a7f37; color:#fff; border-color:#1a7f37; }
+  a { color:var(--accent); }
+  #flights li { margin:.55rem 0; } #flights code { font-size:.83rem; }
+  .stable { border-left:4px solid #1a7f37; }
+</style>
+</head>
+<body>
+<h1>🚂 The RAPP Train</h1>
+<p class="sub">One page, every ring of the <a href="https://github.com/kody-w/rapp-installer">RAPP Brainstem</a>
+release train, runnable on any machine straight from here — no VPN, no signup.</p>
+
+<div class="banner">Freshest → calmest: <b>Canary → Nightly → Alpha → Beta → Grail</b>.
+Rings are <b>test builds</b> qualified by CI + an attestation chain; only the Grail is the
+supported product. <b>Test flights</b> are sandboxed (<code>~/.rapp-flight/</code>, port 7075) and
+never touch an existing install. <b>Joining</b> makes a ring this machine's real install —
+switch rings by wiping <code>~/.brainstem</code> first.</div>
+
+<h2>Test-fly anything (sandboxed, macOS / Linux / WSL)</h2>
+<pre><code>curl -fsSL https://kody-w.github.io/rapp-train/flight.sh | bash -s -- canary</code></pre>
+<p class="risk">Swap the last word for any ring below, or add a branch name to fly one feature.</p>
+
+<div id="rings"></div>
+
+<h2>✈️ Feature flights <span class="meta">(live from rapp-canary branches)</span></h2>
+<p class="risk">Every open canary branch is individually flyable, sandboxed:</p>
+<ul id="flights"><li class="risk">loading branches…</li></ul>
+
+<p style="margin-top:2.5rem">Found a break? That's the point — file it on the ring's repo with your OS
+and the flight/installer output. Escape hatch: wipe <code>~/.brainstem</code> and reinstall the
+<a href="https://kody-w.github.io/rapp-installer/">stable Grail</a>.
+Operations live in the hub's <a href="https://github.com/kody-w/rapp-canary/blob/main/.ring/RUNBOOK.md">RUNBOOK</a>.</p>
+
+<script>
+const RINGS = [
+  { name:'Canary',  repo:'rapp-canary',  icon:'🐤', risk:'Freshest, riskiest — every change lands here first.' },
+  { name:'Nightly', repo:'rapp-nightly', icon:'🌙', risk:'Canary that survived promotion — still early.' },
+  { name:'Alpha',   repo:'rapp-alpha',   icon:'🅰️', risk:'Feature-complete candidates settling down.' },
+  { name:'Beta',    repo:'rapp-beta',    icon:'🅱️', risk:'The next Grail release, soaking. Calmest ring.' },
+  { name:'Grail (stable)', repo:'rapp-installer', icon:'🏆', risk:'The supported product. Not a test ring.', stable:true },
+];
+
+function card(r) {
+  const pages = `https://kody-w.github.io/${r.repo}`;
+  const flight = r.stable ? '' : `<div class="lbl">Sandboxed test flight</div>
+<pre><code>curl -fsSL https://kody-w.github.io/rapp-train/flight.sh | bash -s -- ${r.repo.replace('rapp-','')}</code></pre>`;
+  return `<div class="ring${r.stable ? ' stable' : ''}"><h3>${r.icon} ${r.name}
+  <span class="meta" id="meta-${r.repo}">…</span></h3><div class="risk">${r.risk}</div>
+<div class="lbl">Join — macOS / Linux</div>
+<pre><code>curl -fsSL ${pages}/install.sh | bash</code></pre>
+<div class="lbl">Join — Windows (PowerShell)</div>
+<pre><code>irm ${r.stable ? 'https://raw.githubusercontent.com/kody-w/rapp-installer/main/install.ps1' : pages + '/install.ps1'} | iex</code></pre>${flight}</div>`;
+}
+document.getElementById('rings').innerHTML = RINGS.map(card).join('');
+
+function copyButtons(scope) {
+  scope.querySelectorAll('pre').forEach(pre => {
+    if (pre.querySelector('button.copy')) return;
+    const b = document.createElement('button');
+    b.className = 'copy'; b.textContent = 'copy';
+    b.onclick = () => navigator.clipboard.writeText(pre.querySelector('code').innerText).then(() => {
+      b.textContent = '✓'; b.classList.add('ok');
+      setTimeout(() => { b.textContent = 'copy'; b.classList.remove('ok'); }, 1500);
+    });
+    pre.appendChild(b);
+  });
+}
+copyButtons(document);
+
+RINGS.forEach(async r => {
+  try {
+    const [ver, commit] = await Promise.all([
+      fetch(`https://raw.githubusercontent.com/kody-w/${r.repo}/main/rapp_brainstem/VERSION`).then(x => x.ok ? x.text() : ''),
+      fetch(`https://api.github.com/repos/kody-w/${r.repo}/commits/main`).then(x => x.ok ? x.json() : null),
+    ]);
+    const sha = commit ? commit.sha.slice(0,7) : '?';
+    const when = commit ? new Date(commit.commit.committer.date).toISOString().slice(0,10) : '';
+    document.getElementById(`meta-${r.repo}`).textContent = `v${ver.trim()} @ ${sha} · ${when}`;
+  } catch { document.getElementById(`meta-${r.repo}`).textContent = ''; }
+});
+
+fetch('https://api.github.com/repos/kody-w/rapp-canary/branches?per_page=100')
+  .then(x => x.ok ? x.json() : [])
+  .then(branches => {
+    const flyable = branches.map(b => b.name).filter(n => n !== 'main' && n !== 'setup/ring-overlay');
+    const ul = document.getElementById('flights');
+    if (!flyable.length) { ul.innerHTML = '<li class="risk">no open feature branches right now — canary main IS the freshest flight</li>'; return; }
+    ul.innerHTML = flyable.map(n =>
+      `<li><b>${n}</b><pre><code>curl -fsSL https://kody-w.github.io/rapp-train/flight.sh | bash -s -- canary ${n}</code></pre></li>`).join('');
+    copyButtons(ul);
+  })
+  .catch(() => { document.getElementById('flights').innerHTML = '<li class="risk">branch list unavailable (rate limit) — any canary branch name works with the flight one-liner</li>'; });
+</script>
+</body>
+</html>
