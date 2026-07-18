@@ -19,7 +19,7 @@
 
 ## Vocabulary ownership
 
-- [TRADEMARKS.md](https://kody-w.github.io/rapp-train/TRADEMARKS.md): the ecosystem's claimed marks (RAPP, HOLO, VUI, the RAPP Train, rappid, Rappter, …) — owned by Wildhaven Homes LLC; OSS licenses grant no trademark rights
+- [TRADEMARKS.md](https://kody-w.github.io/rapp-train/TRADEMARKS.md): claimed compound marks (rapp-holo, the RAPP Train, rappid, Rappter, VUI, …) owned by Wildhaven Homes LLC; "RAPP" alone and the RAPP Brainstem are deliberately unclaimed (universal launchpad); OSS licenses grant no trademark rights
 
 ## Operations (the law)
 

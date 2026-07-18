@@ -1,6 +1,7 @@
 # Trademarks of the RAPP ecosystem
 
-All trademarks, service marks, and trade names listed below are claimed by
+The compound marks listed below (`rapp-*` names and "RAPP <thing>" names —
+not "RAPP" standing alone, and not the RAPP Brainstem) are claimed by
 **Wildhaven Homes LLC** in connection with the RAPP ecosystem — software,
 protocols, specifications, hosted surfaces, and associated services. Marks
 are claimed at common law (™) through public use in commerce; this page and
@@ -9,12 +10,19 @@ record of use. The open-source licenses on ecosystem code grant **no rights
 to these marks** — code may be forked freely; the names below may not be
 used to brand derivative products or to imply origin or endorsement.
 
+## What is deliberately NOT claimed
+
+- **"RAPP"** standing alone. The stem is open — the claims below are the
+  compound marks built on it (`rapp-*` names and "RAPP <thing>" names).
+- **RAPP Brainstem** / `rapp-brainstem`. The Brainstem is the universal
+  launchpad and stays unencumbered on purpose: anyone may run it, name it,
+  teach it, and redistribute it. It is the ecosystem's permanent free first
+  hit — the front door is never tolled.
+
 ## Platform and core
 
 | Mark | Names |
 |---|---|
-| **RAPP**™ | The Rapid Agent Prototype Platform — the medium for AI: platform, ecosystem, and naming stem (`rapp-*`) |
-| **RAPP Brainstem**™ | The local-first AI agent server (Tier 1 engine) |
 | **CommunityRAPP**™ | The cloud tier (Tier 2) project and installer path |
 | **RAR**™ / **RAPP Agent Registry**™ | The community agent registry |
 | **rappid**™ | The RAPP identity standard (`rappid:@owner/slug:<hash>`) |
