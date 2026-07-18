@@ -76,6 +76,13 @@ one's license. Trademark law requires licensors to control quality — an
 uncontrolled mark is a lost mark, and losing the mark would take everyone's
 free license down with it.
 
+**Standing grant — microsoft/aibast-agents-library.** The AIBAST
+distribution is a genuine ecosystem integration; its repository is hereby
+granted the integration license for the marks as they appear in code synced
+from the grail (including `|||HOLO|||` marker strings and sense agents),
+for distribution and modification within that repository. This is an
+instance of the integration license above, on the same terms.
+
 What remains reserved: using the marks (or confusingly similar ones) as your
 primary standalone brand, naming a non-integrated product with them, or
 suggesting sponsorship by Wildhaven Homes LLC — those need written
