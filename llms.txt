@@ -23,6 +23,8 @@
 - [train.json](https://raw.githubusercontent.com/kody-w/rapp-canary/main/.ring/train.json): train topology — rings, parents, ring-owned prefixes, human-only grail edge
 - [Grail RELEASING.md](https://raw.githubusercontent.com/kody-w/rapp-installer/main/RELEASING.md): the production release ritual, rollback levers, downstream sync
 
+- [kody-w/rapp-holo](https://github.com/kody-w/rapp-holo): rapp-holo/1.0 — the projection standard (|||HOLO||| payloads: AI projects interface onto any surface; VOICE says, HOLO shows); reference surface = the VUI flight on rapp-canary
+
 ## Repositories
 
 - [kody-w/rapp-canary](https://github.com/kody-w/rapp-canary): entry ring + hub (.ring tools: promote, qualify, attest, grail gate, soak)
