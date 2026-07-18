@@ -192,17 +192,17 @@ Findings here are the payoff: the maiden rehearsal caught two real breaks
 would otherwise have surfaced mid-production-sync. Fix findings UPSTREAM in
 canary (Scenario 3) — never patch them only in the siding.
 
-**Why this is the hero scenario of the whole train**: a distro's shape — its
-README, its disclaimers, its compliance files, its identity — is the
-DISTRIBUTOR'S PROPERTY. AIBAST's shape belongs to Microsoft the way RAPP's
-shape belongs to its maintainer. Clobbering a downstream shape is not a
-bug; it is the upstream overwriting someone else's ownership with its own —
-the exact confusion the trademark page exists to prevent, committed in
-code. One careless sync could ruin the kernel/distro contract, the
-relationship, and the seam all at once. That is why the sync is
-manifest-driven, why downstream-owned files are REPORTED and never touched,
-why rehearsals run in the yard before any production sync, and why a red
-guard here outranks every deadline.
+**Why this is the hero scenario of the whole train**: a distro's shape —
+its README, its disclaimers, its compliance files, its identity — belongs
+to its distributor, and honoring that is the promise that makes distros
+possible at all. AIBAST's shape is Microsoft's just as RAPP's is its
+maintainer's. Every delivery from the kernel arrives as a good guest:
+it brings the kernel's best and changes nothing the host owns. The
+manifest-driven sync, the report-never-touch rule, and the yard rehearsals
+exist to keep that promise on every single crossing — which is why a red
+shape-guard here outranks every deadline. Keep this promise and every
+distributor can build on the kernel with total confidence; that confidence
+is the ecosystem.
 
 ## Scenario 12 — Sync the Grail into Microsoft's aibast (production)
 

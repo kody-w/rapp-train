@@ -67,28 +67,25 @@ the mark takes ™ with attribution to Wildhaven Homes LLC on first mention,
 and your use must not claim to be the origin or official version. This
 integration license is revocable for abuse or confusion.
 
-**Quality control — the clause that protects the free license itself.** Mark
-use under the integration license requires the integration to conform to the
-published spec it claims (for HOLO surfaces, the surface contract in
-rapp-holo/1.0 §3) and to actually work as described. Wildhaven Homes LLC may
-verify any integration's conformance and revoke a failing or misleading
-one's license. Trademark law requires licensors to control quality — an
-uncontrolled mark is a lost mark, and losing the mark would take everyone's
-free license down with it.
+**Quality is what keeps the license free.** The names stay valuable for
+everyone because they keep meaning something: an integration that uses the
+marks should conform to the spec it claims (for HOLO surfaces, the surface
+contract in rapp-holo/1.0 §3) and work as described. We may check
+conformance from time to time and, rarely, part ways with an integration
+that misleads people — that ongoing care is precisely what lets every
+honest integration keep using the vocabulary freely, forever.
 
-**AIBAST is Microsoft's — to be very clear.** Wildhaven Homes LLC claims
-no ownership of, authority over, or affiliation with
-microsoft/aibast-agents-library (AIBAST) or any Microsoft product, and
-nothing on this page grants anything to, restricts, or otherwise applies to
-that repository. Code contributed there by our contributors is offered
-under that repository's own license, and Wildhaven asserts no mark claims
-against AIBAST's normal use, modification, and distribution of code so
-contributed — including any marker strings it contains. The right mental
-model is the kernel/distro one: the Brainstem kernel is open and
-unencumbered, and **AIBAST is Microsoft's distro of it** — exactly as
-kody-w/RAPP is the reference distro — and every distro belongs entirely to
-its distributor. The kernel project is not the landlord of its distros,
-and this page is not their license.
+**Distros are the point — and they belong to their distributors.** The
+Brainstem kernel is open so that anyone can build their own distribution of
+it, and the best proof it works is that great ones exist:
+microsoft/aibast-agents-library (AIBAST) is Microsoft's distro of the
+Brainstem, owned, governed, and licensed by Microsoft — just as kody-w/RAPP
+is the reference distro. We celebrate every distro as fully its
+distributor's own: nothing on this page applies to them, and code our
+contributors offer upstream to a distro comes with our blessing and no
+strings — licensed under that repository's own terms, marker strings and
+all. An open kernel with independent, thriving distros is the model working
+exactly as designed.
 
 What remains reserved: using the marks (or confusingly similar ones) as your
 primary standalone brand, naming a non-integrated product with them, or
