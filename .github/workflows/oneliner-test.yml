@@ -47,7 +47,7 @@ jobs:
           while ((Get-Date) -lt $deadline) {
             Start-Sleep -Seconds 10
             try {
-              $r = Invoke-RestMethod -Uri http://localhost:7071/health -TimeoutSec 5
+              $r = Invoke-RestMethod -Uri http://127.0.0.1:7071/health -TimeoutSec 5
               if ($r) { $ok = $true; break }
             } catch { }
             if ($job.State -eq 'Failed') { break }
