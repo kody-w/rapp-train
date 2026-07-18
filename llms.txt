@@ -1,0 +1,36 @@
+# RAPP Train
+
+> The staged release train for the RAPP Brainstem (a local-first AI agent
+> server): Canary → Nightly → Alpha → Beta → Grail (human-gated production),
+> plus shape sidings that rehearse deliveries into differently-shaped
+> downstream repos. Every ring is publicly installable or sandbox-testable
+> from one-liners on the deck. AI agents: start with the Playbook; treat red
+> oracles (rewrite counts, attestation chains, preflight) as the system
+> working, never something to bypass; never push to the grail or to
+> microsoft/aibast-agents-library; ring installers are ONLY correct from
+> GitHub Pages URLs (raw.githubusercontent copies carry grail identity by
+> design and install the wrong repo).
+
+## Start here
+
+- [Playbook — choose your own adventure](https://kody-w.github.io/rapp-train/PLAYBOOK.md): every scenario (fly, join, ship, promote, qualify, soak, release, rollback, shape-test) with commands and done-criteria
+- [Flight deck](https://kody-w.github.io/rapp-train/): live board of all rings + one-liners + auto-listed feature flights
+- [flight.sh](https://kody-w.github.io/rapp-train/flight.sh): sandboxed test flight of any ring or canary branch (~/.rapp-flight, port 7075)
+
+## Operations (the law)
+
+- [Hub RUNBOOK](https://raw.githubusercontent.com/kody-w/rapp-canary/main/.ring/RUNBOOK.md): the five operator verbs with exact commands
+- [train.json](https://raw.githubusercontent.com/kody-w/rapp-canary/main/.ring/train.json): train topology — rings, parents, ring-owned prefixes, human-only grail edge
+- [Grail RELEASING.md](https://raw.githubusercontent.com/kody-w/rapp-installer/main/RELEASING.md): the production release ritual, rollback levers, downstream sync
+
+## Repositories
+
+- [kody-w/rapp-canary](https://github.com/kody-w/rapp-canary): entry ring + hub (.ring tools: promote, qualify, attest, grail gate, soak)
+- [kody-w/rapp-nightly](https://github.com/kody-w/rapp-nightly), [kody-w/rapp-alpha](https://github.com/kody-w/rapp-alpha), [kody-w/rapp-beta](https://github.com/kody-w/rapp-beta): outer rings (promotion-only)
+- [kody-w/rapp-installer](https://github.com/kody-w/rapp-installer): THE GRAIL — production; human-merge only; never pushed by tooling
+- [kody-w/RAPP](https://github.com/kody-w/RAPP): reference distro; main = lts on the tagged grail pin; branch shape/next = distro-shape siding carrying qualified Beta
+- [kody-w/rapp-shape-aibast](https://github.com/kody-w/rapp-shape-aibast): staging twin rehearsing grail→aibast shape deliveries; microsoft/aibast-agents-library is never touched by rehearsals
+
+## Install endpoints (per-ring rendered identity, drift-oracle gated)
+
+- [Canary](https://kody-w.github.io/rapp-canary/install.sh), [Nightly](https://kody-w.github.io/rapp-nightly/install.sh), [Alpha](https://kody-w.github.io/rapp-alpha/install.sh), [Beta](https://kody-w.github.io/rapp-beta/install.sh), [Grail stable](https://kody-w.github.io/rapp-installer/install.sh)

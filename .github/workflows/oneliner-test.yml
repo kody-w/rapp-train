@@ -1,0 +1,58 @@
+# oneliner-test — prove the LIVE public one-liners on clean GitHub VMs.
+# This tests the exact bytes the deck hands to strangers: the Pages-served
+# flight bootstrapper (unix, sandboxed) and the Pages-served ring installer
+# (Windows, real install path). Never triggers on pull_request.
+name: oneliner-test
+
+on:
+  workflow_dispatch:
+    inputs:
+      ring:
+        description: ring to exercise
+        default: canary
+        type: choice
+        options: [canary, nightly, alpha, beta]
+
+permissions:
+  contents: read
+
+jobs:
+  flight-unix:
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, macos-latest]
+    runs-on: ${{ matrix.os }}
+    timeout-minutes: 15
+    steps:
+      - name: Live public flight one-liner
+        shell: bash
+        run: |
+          set -euo pipefail
+          curl -fsSL https://kody-w.github.io/rapp-train/flight.sh | bash -s -- "${{ inputs.ring }}"
+          curl -fsS http://localhost:7075/health
+          kill "$(cat "$HOME/.rapp-flight/${{ inputs.ring }}/flight.pid")"
+
+  join-windows:
+    runs-on: windows-latest
+    timeout-minutes: 20
+    steps:
+      - name: Live public join one-liner (real install path)
+        shell: powershell
+        run: |
+          $ErrorActionPreference = 'Continue'
+          $job = Start-Job { irm "https://kody-w.github.io/rapp-${{ inputs.ring }}/install.ps1" | iex }
+          $deadline = (Get-Date).AddMinutes(12)
+          $ok = $false
+          while ((Get-Date) -lt $deadline) {
+            Start-Sleep -Seconds 10
+            try {
+              $r = Invoke-RestMethod -Uri http://localhost:7071/health -TimeoutSec 5
+              if ($r) { $ok = $true; break }
+            } catch { }
+            if ($job.State -eq 'Failed') { break }
+          }
+          Receive-Job $job -Keep | Select-Object -Last 30 | Out-String | Write-Host
+          Stop-Job $job -ErrorAction SilentlyContinue
+          if (-not $ok) { Write-Error "server never answered /health on :7071"; exit 1 }
+          Write-Host "LIVE one-liner install of ${{ inputs.ring }} served /health on a factory VM"

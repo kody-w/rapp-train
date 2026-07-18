@@ -44,6 +44,24 @@ switch rings by wiping <code>~/.brainstem</code> first.</div>
 <p class="risk">Every open canary branch is individually flyable, sandboxed:</p>
 <ul id="flights"><li class="risk">loading branches…</li></ul>
 
+<h2>🏗️ The Shape Yard <span class="meta">(deliveries into differently-shaped downstreams)</span></h2>
+<p class="risk">Rings test the payload; sidings test the <i>deliveries</i>. Nothing here touches
+grail, microsoft/aibast, or RAPP's lts main.</p>
+<div class="ring"><h3>📦 RAPP distro shape — <code>shape/next</code></h3>
+<div class="risk"><a href="https://github.com/kody-w/RAPP/tree/shape/next">kody-w/RAPP@shape/next</a> mirrors the
+current qualified Beta per the Mirror Spec (three frozen files + a <code>channel: next</code> kernel pin).
+RAPP <code>main</code> stays lts on the tagged grail pin.</div></div>
+<div class="ring"><h3>🪞 aibast shape — staging twin</h3>
+<div class="risk"><a href="https://github.com/kody-w/rapp-shape-aibast">kody-w/rapp-shape-aibast</a> (seeded from
+microsoft main) rehearses the real <code>sync-to-aibast.sh</code> from Beta before any production sync.
+Its maiden run caught two real breaks upstream — that is the yard doing its job.</div></div>
+
+<h2>📖 The Playbook</h2>
+<p>Every scenario — fly, join, ship, promote, qualify, soak, release, rollback, shape-test —
+choose-your-own-adventure style, for humans and AIs:
+<a href="https://kody-w.github.io/rapp-train/PLAYBOOK.md"><b>PLAYBOOK.md</b></a> ·
+machine entry point <a href="https://kody-w.github.io/rapp-train/llms.txt"><code>llms.txt</code></a></p>
+
 <p style="margin-top:2.5rem">Found a break? That's the point — file it on the ring's repo with your OS
 and the flight/installer output. Escape hatch: wipe <code>~/.brainstem</code> and reinstall the
 <a href="https://kody-w.github.io/rapp-installer/">stable Grail</a>.
