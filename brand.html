@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>RAPP Brand & Style Guide</title>
+<style>
+  * { box-sizing:border-box; }
+  body { margin:0; background:#05060a; color:#e8e8f0; font-family:-apple-system,"Segoe UI",sans-serif; line-height:1.55; }
+  main { max-width:940px; margin:0 auto; padding:2.5rem 1rem 4rem; }
+  h1 { font-size:1.7rem; margin:.2rem 0; } h2 { font-size:1.15rem; margin-top:2.4rem; border-bottom:1px solid rgba(255,255,255,.1); padding-bottom:.4rem; }
+  .sub { color:#888; margin-top:0; }
+  .glass { background:radial-gradient(circle at 30% 25%, rgba(255,255,255,.09), rgba(255,255,255,.03) 60%); border:1px solid rgba(255,255,255,.13); border-radius:16px; padding:1.1rem 1.3rem; margin:1rem 0; backdrop-filter:blur(14px); }
+  .swatches { display:grid; grid-template-columns:repeat(auto-fill,minmax(150px,1fr)); gap:10px; }
+  .sw { border-radius:10px; padding:.7rem .8rem; font-size:.78rem; font-family:ui-monospace,monospace; border:1px solid rgba(255,255,255,.12); }
+  .row { display:flex; gap:14px; flex-wrap:wrap; align-items:center; }
+  .key { width:92px; height:78px; border-radius:16px; border:1px solid rgba(255,255,255,.1); background:linear-gradient(180deg,rgba(255,255,255,.13),rgba(255,255,255,.05)); box-shadow:0 6px 14px rgba(0,0,0,.45), inset 0 1px 0 rgba(255,255,255,.18); display:flex; flex-direction:column; align-items:center; justify-content:center; gap:4px; font-size:1.3rem; }
+  .key small { font-size:.55rem; letter-spacing:.05em; color:rgba(255,255,255,.55); text-transform:uppercase; }
+  .key.glow { box-shadow:0 6px 18px rgba(0,0,0,.5), 0 0 22px var(--g), inset 0 1px 0 rgba(255,255,255,.25); }
+  .dot { width:10px; height:10px; border-radius:50%; background:var(--g); box-shadow:0 0 14px var(--g); }
+  table { border-collapse:collapse; width:100%; font-size:.9rem; }
+  td, th { padding:.45rem .6rem; border-bottom:1px solid rgba(255,255,255,.08); text-align:left; vertical-align:top; }
+  code { background:rgba(127,127,127,.15); border-radius:5px; padding:.08em .35em; font-size:.88em; }
+  .tunnel { height:90px; border-radius:14px; overflow:hidden; position:relative; border:1px solid rgba(255,255,255,.1); }
+  .tunnel canvas { width:100%; height:100%; display:block; }
+  .good::before { content:"✓ "; color:#39d353; } .bad::before { content:"✗ "; color:#f85149; }
+  ul.rules { padding-left:1.1rem; } ul.rules li { margin:.4rem 0; }
+  a { color:#3b82f6; }
+  .line { border-left:4px solid #1a7f37; }
+</style>
+</head>
+<body>
+<main>
+<h1>🧠 RAPP Brand &amp; Style Guide</h1>
+<p class="sub">The medium for AI has a look, a voice, and a naming grammar. This page renders them — it is its own specimen.</p>
+
+<h2>Palette — the void, the glass, the glow</h2>
+<div class="glass">
+  <div class="swatches">
+    <div class="sw" style="background:#05060a">#05060a<br>the void (bg)</div>
+    <div class="sw" style="background:rgba(255,255,255,.08)">white @ 8%<br>glass surfaces</div>
+    <div class="sw" style="background:#3b82f6; color:#fff">#3b82f6<br>signal blue (accent)</div>
+    <div class="sw" style="background:#1a7f37; color:#fff">#1a7f37<br>grail green (stable/GO)</div>
+    <div class="sw" style="background:#b91c1c; color:#fff">#b91c1c<br>gate red (human gates)</div>
+    <div class="sw" style="background:#39d353; color:#031">#39d353<br>LED green (alive)</div>
+    <div class="sw" style="background:#e3b341; color:#320">#e3b341<br>LED amber (warn)</div>
+    <div class="sw" style="background:#22d3ee; color:#023">#22d3ee<br>listening cyan</div>
+  </div>
+  <p style="font-size:.85rem; color:#999">Option glows rotate the wheel: <code>hsl(355|120|210|32|275|180|55|320, 85%, 60%)</code>.
+  Dark is the default reality; light themes are a courtesy, never the identity. Meaning is carried by GLOW, not fill.</p>
+</div>
+
+<h2>Type</h2>
+<div class="glass">
+  <p style="margin:.2rem 0"><b>UI + prose</b>: the platform stack — <code>-apple-system, "Segoe UI", sans-serif</code>. No webfonts; the brand loads instantly everywhere.</p>
+  <p style="margin:.2rem 0; font-family:ui-monospace,monospace"><b>Evidence</b>: ui-monospace for SHAs, versions, one-liners — <code>v0.6.16 @ 87b11a3</code>.</p>
+  <p style="margin:.2rem 0"><span style="font-size:.58rem; letter-spacing:.12em; text-transform:uppercase; color:rgba(255,255,255,.4)">Silkscreen microcopy — small caps, letterspaced, quiet</span></p>
+</div>
+
+<h2>Motifs — hardware you can't hold</h2>
+<div class="glass">
+  <div class="row">
+    <div class="key">▶<small>send</small></div>
+    <div class="key glow" style="--g:hsl(120,85%,60%)"><span class="dot"></span><small>option</small></div>
+    <div class="key glow" style="--g:hsl(355,85%,60%)"><span class="dot"></span><small>option</small></div>
+    <div style="max-width:420px; font-size:.88rem; color:#bbb">The <b>keycap</b>: translucent case, soft shadow, inner highlight, RGB glow when
+    the AI deals it. Surfaces feel like beloved desk hardware — the Brainstem is a machine you live with, not a webpage.</div>
+  </div>
+  <div class="tunnel" style="margin-top:1rem"><canvas id="t"></canvas></div>
+  <p style="font-size:.85rem; color:#999">The <b>depth tunnel</b>: receding rounded frames, hue drifting with conversation depth.
+  Feedback, never decoration — idle drifts, thinking accelerates, speaking pulses. If a visual doesn't carry state, it doesn't ship.</p>
+  <p style="font-size:.85rem; color:#999"><b>Status is physical</b>: LEDs (● alive, ● warn), knobs, silkscreen. <b>Icons are emoji</b> —
+  🧠 Brainstem · 🚂 Train · 🐤🌙🅰️🅱️ rings · 🏆 Grail · 🛫 flights · 🏗️ Shape Yard · 🔮 holo · 🗼 Tower. No icon fonts, no SVG packs.</p>
+</div>
+
+<h2>Naming grammar</h2>
+<div class="glass">
+  <table>
+    <tr><th>Class</th><th>Form</th><th>Examples</th></tr>
+    <tr><td>Protocols &amp; specs</td><td><code>rapp-&lt;thing&gt;</code> lowercase, versioned <code>/1.0</code>, never version the wire string</td><td>rapp-holo/1.0, rapp-frame/1.0, rapp-spine</td></tr>
+    <tr><td>Products &amp; places</td><td>“RAPP &lt;Thing&gt;” title case</td><td>RAPP Brainstem, the RAPP Train, RAPP Zoo</td></tr>
+    <tr><td>Anatomy (tiers)</td><td>the body metaphor</td><td>Brainstem → Hippocampus → Nervous System</td></tr>
+    <tr><td>Release (vehicle)</td><td>the railroad metaphor</td><td>rings, flights, the Grail, sidings, the Shape Yard, the Tower</td></tr>
+    <tr><td>Senses (channels)</td><td><code>|||SENSE|||</code> uppercase markers</td><td>|||VOICE|||, |||HOLO|||</td></tr>
+    <tr><td>Identity</td><td><code>rappid:@owner/slug:&lt;hash&gt;</code></td><td>never versioned in the string</td></tr>
+  </table>
+  <ul class="rules" style="font-size:.88rem">
+    <li class="good">“the Grail”, “the Tower”, “the VUI” — definite articles make places feel real</li>
+    <li class="good">™ on first mention of compound marks; attribute Wildhaven Homes LLC</li>
+    <li class="bad">“RAPP™” alone, “Rapp”, “rapp brainstem” as a brand — the stem is open and stays uncapitalized only in <code>rapp-*</code> compounds</li>
+    <li class="bad">Naming a non-integrated product with the marks (see <a href="https://kody-w.github.io/rapp-train/TRADEMARKS.md">TRADEMARKS.md</a>)</li>
+  </ul>
+</div>
+
+<h2>Voice</h2>
+<div class="glass">
+  <ul class="rules" style="font-size:.9rem">
+    <li><b>Definitional cadence</b>: “RAPP is the medium for AI. HOLO is how AI shows itself.” Say what a thing IS, then stop.</li>
+    <li><b>Evidence over adjectives</b>: run URLs, SHAs, and green checks — never “blazingly fast”, never “enterprise-grade”.</li>
+    <li><b>Red is honest</b>: “a break is a win”, “the oracle refusing is the system working”. We brag about our gates, not our vibes.</li>
+    <li><b>The front door is never tolled</b>: every surface states the free path first. One pasted line before any pitch.</li>
+    <li><b>Silkscreen humility</b>: the biggest promise on any surface is two words — “Let's build”.</li>
+  </ul>
+</div>
+
+<h2 id="the-line">The Line — the IP starting position</h2>
+<div class="glass line">
+  <p style="font-size:.92rem">One clean division, stated in public, in advance. When any conversation about
+  dividing IP begins, it begins here:</p>
+  <table>
+    <tr><th>OPEN — everyone's, forever</th><th>OWNED — Wildhaven Homes LLC</th></tr>
+    <tr><td>“RAPP” standing alone (the stem)</td><td>The compound vocabulary: <code>rapp-*</code> names and “RAPP &lt;Thing&gt;” names</td></tr>
+    <tr><td>The RAPP Brainstem — the universal launchpad, unencumbered by design</td><td>The standards' names (rapp-holo, rapp-frame, rapp-hydra, rapp-spine, rappid)</td></tr>
+    <tr><td>The open-source code, under its licenses</td><td>The brand system on this page and the marks in <a href="https://kody-w.github.io/rapp-train/TRADEMARKS.md">TRADEMARKS.md</a></td></tr>
+    <tr><td>Integration uses of the marks — the first hit is free</td><td>Standalone branding, origin claims, endorsement claims</td></tr>
+  </table>
+  <p style="font-size:.85rem; color:#999">Forks keep the code; the names stay home. Integrators get the vocabulary free by
+  integrating. Everything else is a conversation — and this table is where it starts.</p>
+</div>
+
+<p style="margin-top:2.5rem; font-size:.8rem; color:#666">Part of the <a href="https://kody-w.github.io/rapp-train/">RAPP Train</a> ·
+<a href="https://kody-w.github.io/rapp-train/TRADEMARKS.md">TRADEMARKS.md</a> ·
+<a href="https://kody-w.github.io/rapp-train/llms.txt">llms.txt</a> · The RAPP Train™ and the rapp-* compound vocabulary are trademarks of Wildhaven Homes LLC.</p>
+</main>
+<script>
+const c = document.getElementById('t'), x = c.getContext('2d');
+function size(){ c.width = c.clientWidth; c.height = c.clientHeight; } size(); addEventListener('resize', size);
+let rings = Array.from({length:16}, (_,i)=>({z:i/16})), hue = 210;
+(function draw(){
+  x.fillStyle = 'rgba(5,6,10,.32)'; x.fillRect(0,0,c.width,c.height);
+  hue += .05;
+  for (const r of rings){
+    r.z -= .003; if (r.z <= .02) r.z = 1;
+    const s = (1-r.z)**2.2, w = c.width*1.1*s, h = c.height*1.6*s;
+    x.strokeStyle = `hsla(${(hue + r.z*70)%360},80%,62%,${Math.min(.5,.06+s*.4)})`;
+    x.lineWidth = 1 + s*2;
+    x.beginPath(); x.roundRect(c.width/2-w/2, c.height/2-h/2, w, h, 24*s+3); x.stroke();
+  }
+  requestAnimationFrame(draw);
+})();
+</script>
+</body>
+</html>
