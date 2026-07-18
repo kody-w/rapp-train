@@ -17,6 +17,10 @@
 - [Flight deck](https://kody-w.github.io/rapp-train/): live board of all rings + one-liners + auto-listed feature flights
 - [flight.sh](https://kody-w.github.io/rapp-train/flight.sh): sandboxed test flight of any ring or canary branch (~/.rapp-flight, port 7075)
 
+## Vocabulary ownership
+
+- [TRADEMARKS.md](https://kody-w.github.io/rapp-train/TRADEMARKS.md): the ecosystem's claimed marks (RAPP, HOLO, VUI, the RAPP Train, rappid, Rappter, …) — owned by Wildhaven Homes LLC; OSS licenses grant no trademark rights
+
 ## Operations (the law)
 
 - [Hub RUNBOOK](https://raw.githubusercontent.com/kody-w/rapp-canary/main/.ring/RUNBOOK.md): the five operator verbs with exact commands
