@@ -67,6 +67,15 @@ the mark takes ™ with attribution to Wildhaven Homes LLC on first mention,
 and your use must not claim to be the origin or official version. This
 integration license is revocable for abuse or confusion.
 
+**Quality control — the clause that protects the free license itself.** Mark
+use under the integration license requires the integration to conform to the
+published spec it claims (for HOLO surfaces, the surface contract in
+rapp-holo/1.0 §3) and to actually work as described. Wildhaven Homes LLC may
+verify any integration's conformance and revoke a failing or misleading
+one's license. Trademark law requires licensors to control quality — an
+uncontrolled mark is a lost mark, and losing the mark would take everyone's
+free license down with it.
+
 What remains reserved: using the marks (or confusingly similar ones) as your
 primary standalone brand, naming a non-integrated product with them, or
 suggesting sponsorship by Wildhaven Homes LLC — those need written
