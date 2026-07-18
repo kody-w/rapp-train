@@ -37,22 +37,25 @@ jobs:
     runs-on: windows-latest
     timeout-minutes: 20
     steps:
-      - name: Live public join one-liner (real install path)
+      # Proven launch shape from ring preflight: cmd owns the redirection so the
+      # grandchild server inherits real writable handles — Start-Job/Start-Process
+      # redirection wedges grandchildren on console semantics in consoleless CI.
+      - name: Launch the live public one-liner (detached, console-safe)
         shell: powershell
         run: |
-          $ErrorActionPreference = 'Continue'
-          $job = Start-Job { irm "https://kody-w.github.io/rapp-${{ inputs.ring }}/install.ps1" | iex }
-          $deadline = (Get-Date).AddMinutes(12)
-          $ok = $false
-          while ((Get-Date) -lt $deadline) {
-            Start-Sleep -Seconds 10
-            try {
-              $r = Invoke-RestMethod -Uri http://127.0.0.1:7071/health -TimeoutSec 5
-              if ($r) { $ok = $true; break }
-            } catch { }
-            if ($job.State -eq 'Failed') { break }
-          }
-          Receive-Job $job -Keep | Select-Object -Last 30 | Out-String | Write-Host
-          Stop-Job $job -ErrorAction SilentlyContinue
-          if (-not $ok) { Write-Error "server never answered /health on :7071"; exit 1 }
-          Write-Host "LIVE one-liner install of ${{ inputs.ring }} served /health on a factory VM"
+          $boot = "irm https://kody-w.github.io/rapp-${{ inputs.ring }}/install.ps1 | iex"
+          $enc = [Convert]::ToBase64String([Text.Encoding]::Unicode.GetBytes($boot))
+          Start-Process cmd -ArgumentList '/c',"powershell -NoProfile -ExecutionPolicy Bypass -EncodedCommand $enc > `"$env:RUNNER_TEMP\install.log`" 2>&1"
+
+      - name: Wait for a serving brainstem
+        shell: bash
+        run: |
+          set -uo pipefail
+          for i in $(seq 1 120); do
+            sleep 5
+            if curl -sf http://localhost:7071/health -o "$RUNNER_TEMP/health.json"; then break; fi
+            if [ "$i" = 120 ]; then echo "server never came up"; tail -60 "$RUNNER_TEMP/install.log" 2>/dev/null; exit 1; fi
+          done
+          cat "$RUNNER_TEMP/health.json"
+          echo ""
+          echo "LIVE public one-liner took a factory Windows VM to a serving brainstem"
