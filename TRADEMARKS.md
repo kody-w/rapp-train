@@ -83,10 +83,12 @@ nothing on this page grants anything to, restricts, or otherwise applies to
 that repository. Code contributed there by our contributors is offered
 under that repository's own license, and Wildhaven asserts no mark claims
 against AIBAST's normal use, modification, and distribution of code so
-contributed — including any marker strings it contains. The relationship
-runs one way and stops at the door: the grail is an upstream source AIBAST
-may draw from. It is not part of this ecosystem's estate, and this page is
-not its license.
+contributed — including any marker strings it contains. The right mental
+model is the kernel/distro one: the Brainstem kernel is open and
+unencumbered, and **AIBAST is Microsoft's distro of it** — exactly as
+kody-w/RAPP is the reference distro — and every distro belongs entirely to
+its distributor. The kernel project is not the landlord of its distros,
+and this page is not their license.
 
 What remains reserved: using the marks (or confusingly similar ones) as your
 primary standalone brand, naming a non-integrated product with them, or
