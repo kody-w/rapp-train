@@ -47,13 +47,22 @@ used to brand derivative products or to imply origin or endorsement.
 | **NeuronSwarm**™ | The multi-lens agent swarm system |
 | **The Art of Brainstemming**™ | The ebook and its title |
 
-## Use guidelines
+## Use guidelines — integration is the license
 
-Nominative fair use is welcome: you may truthfully state that your project
-runs on, extends, or is compatible with RAPP. You may not name a product,
-service, registry, or fork with these marks (or confusingly similar ones),
-use them in your own branding, or suggest sponsorship by Wildhaven Homes LLC
-without written permission. When referencing a mark, use it as shown above
-with the ™ symbol on first mention.
+**The first hit is free.** If your product genuinely integrates with the
+RAPP ecosystem — it runs the Brainstem, speaks a `rapp-*` protocol, renders
+HOLO projections, publishes to the RAR, rides the Train — you are hereby
+licensed to use these marks to name and describe that integration, no
+permission slip required ("HoloWatch — a VUI for rapp-holo", "AcmeBot for
+RAPP"). Conditions: the integration must actually exist and keep working,
+the mark takes ™ with attribution to Wildhaven Homes LLC on first mention,
+and your use must not claim to be the origin or official version. This
+integration license is revocable for abuse or confusion.
+
+What remains reserved: using the marks (or confusingly similar ones) as your
+primary standalone brand, naming a non-integrated product with them, or
+suggesting sponsorship by Wildhaven Homes LLC — those need written
+permission. Nominative fair use (truthfully stating compatibility) is always
+welcome. Forks keep the code, not the names.
 
 *Contact: via issues on [kody-w/rapp-train](https://github.com/kody-w/rapp-train). This page asserts and records claims; it is not legal advice.*
