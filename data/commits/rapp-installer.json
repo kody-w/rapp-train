@@ -1,17 +1,17 @@
 {
- "sha": "4817c876cf16c77dbf93a13d10e9d9ebcbb2ee27",
- "html_url": "https://github.com/kody-w/rapp-installer/commit/4817c876cf16c77dbf93a13d10e9d9ebcbb2ee27",
+ "sha": "49db80c8c6b6caa7647369beaf477d374a8f293c",
+ "html_url": "https://github.com/kody-w/rapp-installer/commit/49db80c8c6b6caa7647369beaf477d374a8f293c",
  "commit": {
-  "message": "Merge pull request #45 from kody-w/copilot/brainstem-scout-callback\n\nAdd rapp@brainstem marketplace",
+  "message": "Merge pull request #46 from kody-w/copilot/rapp-at-x-article-xxv\n\nFollow RAR marketplace Article XXV",
   "author": {
    "name": "Kody Wildfeuer",
    "email": "kwildfeuer@me.com",
-   "date": "2026-08-27T21:10:02-04:00"
+   "date": "2026-08-28T00:35:43-04:00"
   },
   "committer": {
    "name": "Kody Wildfeuer",
    "email": "kwildfeuer@me.com",
-   "date": "2026-08-27T21:10:02-04:00"
+   "date": "2026-08-28T00:35:43-04:00"
   }
  }
 }
