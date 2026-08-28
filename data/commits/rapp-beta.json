@@ -1,0 +1,17 @@
+{
+ "sha": "6d7604a1349d8e8272f9193b266cff43d8918a36",
+ "html_url": "https://github.com/kody-w/rapp-beta/commit/6d7604a1349d8e8272f9193b266cff43d8918a36",
+ "commit": {
+  "message": "promote: alpha -> beta (tutorial six-steps + shape-finding fixes)\n\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>",
+  "author": {
+   "name": "Kody Wildfeuer",
+   "email": "kwildfeuer@me.com",
+   "date": "2026-07-18T14:55:25-05:00"
+  },
+  "committer": {
+   "name": "Kody Wildfeuer",
+   "email": "kwildfeuer@me.com",
+   "date": "2026-07-18T14:55:25-05:00"
+  }
+ }
+}

@@ -1,0 +1,17 @@
+{
+ "sha": "b9a225310087fb61a59dae6fce792a33b719618b",
+ "html_url": "https://github.com/kody-w/rapp-canary/commit/b9a225310087fb61a59dae6fce792a33b719618b",
+ "commit": {
+  "message": "merge: feat/cartridge-ref \u2014 any .egg travels embedded or referenced\n\nPreflight green on the branch before merge, per .ring/RUNBOOK.md. Zero kernel\nchange. Enters at canary; promotion and the grail gate remain Kody's.\n\nCo-Authored-By: Claude Opus 5 (1M context) <noreply@anthropic.com>",
+  "author": {
+   "name": "Kody Wildfeuer",
+   "email": "kwildfeuer@me.com",
+   "date": "2026-07-25T13:16:19-04:00"
+  },
+  "committer": {
+   "name": "Kody Wildfeuer",
+   "email": "kwildfeuer@me.com",
+   "date": "2026-07-25T13:16:19-04:00"
+  }
+ }
+}

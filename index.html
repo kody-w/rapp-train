@@ -118,9 +118,14 @@ copyButtons(document);
 
 RINGS.forEach(async r => {
   try {
+    // Static Data Covenant: commit metadata is a CI-harvested snapshot
+    // (data/commits/<repo>.json, identical "get a commit" API shape) read
+    // from this Pages origin — never api.github.com from the visitor
+    // browser. The VERSION file read stays on raw.githubusercontent.com,
+    // which is an allowed origin (not the API).
     const [ver, commit] = await Promise.all([
       fetch(`https://raw.githubusercontent.com/kody-w/${r.repo}/main/rapp_brainstem/VERSION`).then(x => x.ok ? x.text() : ''),
-      fetch(`https://api.github.com/repos/kody-w/${r.repo}/commits/main`).then(x => x.ok ? x.json() : null),
+      fetch(`data/commits/${r.repo}.json`).then(x => x.ok ? x.json() : null),
     ]);
     const sha = commit ? commit.sha.slice(0,7) : '?';
     const when = commit ? new Date(commit.commit.committer.date).toISOString().slice(0,10) : '';
@@ -128,7 +133,9 @@ RINGS.forEach(async r => {
   } catch { document.getElementById(`meta-${r.repo}`).textContent = ''; }
 });
 
-fetch('https://api.github.com/repos/kody-w/rapp-canary/branches?per_page=100')
+// Static Data Covenant: CI-harvested snapshot (data/canary-branches.json,
+// identical "list branches" API shape) instead of api.github.com.
+fetch('data/canary-branches.json')
   .then(x => x.ok ? x.json() : [])
   .then(branches => {
     const flyable = branches.map(b => b.name).filter(n => n !== 'main' && n !== 'setup/ring-overlay');
@@ -138,7 +145,7 @@ fetch('https://api.github.com/repos/kody-w/rapp-canary/branches?per_page=100')
       `<li><b>${n}</b><pre><code>curl -fsSL https://kody-w.github.io/rapp-train/flight.sh | bash -s -- canary ${n}</code></pre></li>`).join('');
     copyButtons(ul);
   })
-  .catch(() => { document.getElementById('flights').innerHTML = '<li class="risk">branch list unavailable (rate limit) — any canary branch name works with the flight one-liner</li>'; });
+  .catch(() => { document.getElementById('flights').innerHTML = '<li class="risk">branch list unavailable (snapshot not harvested yet) — any canary branch name works with the flight one-liner</li>'; });
 </script>
 </body>
 </html>

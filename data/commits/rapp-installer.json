@@ -1,0 +1,17 @@
+{
+ "sha": "4817c876cf16c77dbf93a13d10e9d9ebcbb2ee27",
+ "html_url": "https://github.com/kody-w/rapp-installer/commit/4817c876cf16c77dbf93a13d10e9d9ebcbb2ee27",
+ "commit": {
+  "message": "Merge pull request #45 from kody-w/copilot/brainstem-scout-callback\n\nAdd rapp@brainstem marketplace",
+  "author": {
+   "name": "Kody Wildfeuer",
+   "email": "kwildfeuer@me.com",
+   "date": "2026-08-27T21:10:02-04:00"
+  },
+  "committer": {
+   "name": "Kody Wildfeuer",
+   "email": "kwildfeuer@me.com",
+   "date": "2026-08-27T21:10:02-04:00"
+  }
+ }
+}
