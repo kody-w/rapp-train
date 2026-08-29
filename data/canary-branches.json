@@ -80,6 +80,14 @@
   "protected": false
  },
  {
+  "name": "fix/grail-signin-survival",
+  "commit": {
+   "sha": "6e130b462addc3461702ece853b870f9385dee02",
+   "url": "https://api.github.com/repos/kody-w/rapp-canary/commits/6e130b462addc3461702ece853b870f9385dee02"
+  },
+  "protected": false
+ },
+ {
   "name": "fix/installer-trust",
   "commit": {
    "sha": "15f0a3ebb4f78af30a6ecdcdbcef891da862e403",
