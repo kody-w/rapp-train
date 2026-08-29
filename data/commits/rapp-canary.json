@@ -1,17 +1,17 @@
 {
- "sha": "b9a225310087fb61a59dae6fce792a33b719618b",
- "html_url": "https://github.com/kody-w/rapp-canary/commit/b9a225310087fb61a59dae6fce792a33b719618b",
+ "sha": "1bd8f39cd5ff8a1de0cd4a0f5720cea00853e6cd",
+ "html_url": "https://github.com/kody-w/rapp-canary/commit/1bd8f39cd5ff8a1de0cd4a0f5720cea00853e6cd",
  "commit": {
-  "message": "merge: feat/cartridge-ref \u2014 any .egg travels embedded or referenced\n\nPreflight green on the branch before merge, per .ring/RUNBOOK.md. Zero kernel\nchange. Enters at canary; promotion and the grail gate remain Kody's.\n\nCo-Authored-By: Claude Opus 5 (1M context) <noreply@anthropic.com>",
+  "message": "Merge pull request #6 from kody-w/fix/installer-silent-steps\n\ninstaller: never look hung \u2014 visible winget/venv/pip steps, capped pip retries",
   "author": {
    "name": "Kody Wildfeuer",
    "email": "kwildfeuer@me.com",
-   "date": "2026-07-25T13:16:19-04:00"
+   "date": "2026-08-28T15:30:38-04:00"
   },
   "committer": {
    "name": "Kody Wildfeuer",
    "email": "kwildfeuer@me.com",
-   "date": "2026-07-25T13:16:19-04:00"
+   "date": "2026-08-28T15:30:38-04:00"
   }
  }
 }
