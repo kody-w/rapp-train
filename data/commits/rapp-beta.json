@@ -1,17 +1,17 @@
 {
- "sha": "6d7604a1349d8e8272f9193b266cff43d8918a36",
- "html_url": "https://github.com/kody-w/rapp-beta/commit/6d7604a1349d8e8272f9193b266cff43d8918a36",
+ "sha": "42c7e405bcf241c147a495343dc5d0132e9c0929",
+ "html_url": "https://github.com/kody-w/rapp-beta/commit/42c7e405bcf241c147a495343dc5d0132e9c0929",
  "commit": {
-  "message": "promote: alpha -> beta (tutorial six-steps + shape-finding fixes)\n\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>",
+  "message": "promote: alpha -> beta\n\nPromote the Alpha-qualified shared payload through commit 8c9964a after successful main preflight.\n\nAlpha preflight: https://github.com/kody-w/rapp-alpha/actions/runs/33276202381\n\nReviewed-by: Copilot CLI GPT-5.6 Sol (agreed round 12)\n\nCo-authored-by: Copilot <223556219+Copilot@users.noreply.github.com>",
   "author": {
    "name": "Kody Wildfeuer",
    "email": "kwildfeuer@me.com",
-   "date": "2026-07-18T14:55:25-05:00"
+   "date": "2026-08-29T17:33:33-04:00"
   },
   "committer": {
    "name": "Kody Wildfeuer",
    "email": "kwildfeuer@me.com",
-   "date": "2026-07-18T14:55:25-05:00"
+   "date": "2026-08-29T17:33:33-04:00"
   }
  }
 }

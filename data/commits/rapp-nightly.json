@@ -1,17 +1,17 @@
 {
- "sha": "4410a1c8062f2faa3e045fca84a607c961ff3a9e",
- "html_url": "https://github.com/kody-w/rapp-nightly/commit/4410a1c8062f2faa3e045fca84a607c961ff3a9e",
+ "sha": "125e733077892562943fab950e5dede51e6613da",
+ "html_url": "https://github.com/kody-w/rapp-nightly/commit/125e733077892562943fab950e5dede51e6613da",
  "commit": {
-  "message": "promote: canary -> nightly (tutorial six-steps + shape-finding fixes)\n\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>",
+  "message": "promote: canary -> nightly\n\nPromote shared payload through Canary commit 81e8af2e137f880d1f64efe3603834cdb3f086f8 after successful main preflight.\n\nCanary preflight: https://github.com/kody-w/rapp-canary/actions/runs/33275930497\n\nReviewed-by: Copilot CLI GPT-5.6 Sol (agreed round 12)\n\nCo-authored-by: Copilot <223556219+Copilot@users.noreply.github.com>",
   "author": {
    "name": "Kody Wildfeuer",
    "email": "kwildfeuer@me.com",
-   "date": "2026-07-18T14:55:15-05:00"
+   "date": "2026-08-29T17:26:25-04:00"
   },
   "committer": {
    "name": "Kody Wildfeuer",
    "email": "kwildfeuer@me.com",
-   "date": "2026-07-18T14:55:15-05:00"
+   "date": "2026-08-29T17:26:25-04:00"
   }
  }
 }
