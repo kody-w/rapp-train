@@ -1,17 +1,17 @@
 {
- "sha": "125e733077892562943fab950e5dede51e6613da",
- "html_url": "https://github.com/kody-w/rapp-nightly/commit/125e733077892562943fab950e5dede51e6613da",
+ "sha": "0b68d80c3ec9e0d869aa334bb05dd1c9fabace69",
+ "html_url": "https://github.com/kody-w/rapp-nightly/commit/0b68d80c3ec9e0d869aa334bb05dd1c9fabace69",
  "commit": {
-  "message": "promote: canary -> nightly\n\nPromote shared payload through Canary commit 81e8af2e137f880d1f64efe3603834cdb3f086f8 after successful main preflight.\n\nCanary preflight: https://github.com/kody-w/rapp-canary/actions/runs/33275930497\n\nReviewed-by: Copilot CLI GPT-5.6 Sol (agreed round 12)\n\nCo-authored-by: Copilot <223556219+Copilot@users.noreply.github.com>",
+  "message": "reseed: restore production baseline\n\nReset the Nightly shared payload to exact Grail main bytes; preserve the prior tip at archive/pre-pristine-20260830.\n\nCo-authored-by: Copilot <223556219+Copilot@users.noreply.github.com>\nCopilot-Session: 690f70cf-c834-40ff-b050-37382ea46b0d",
   "author": {
    "name": "Kody Wildfeuer",
    "email": "kwildfeuer@me.com",
-   "date": "2026-08-29T17:26:25-04:00"
+   "date": "2026-08-30T08:30:21-04:00"
   },
   "committer": {
    "name": "Kody Wildfeuer",
    "email": "kwildfeuer@me.com",
-   "date": "2026-08-29T17:26:25-04:00"
+   "date": "2026-08-30T08:30:21-04:00"
   }
  }
 }

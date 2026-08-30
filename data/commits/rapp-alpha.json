@@ -1,17 +1,17 @@
 {
- "sha": "8c9964aed07501ce64831469b2098c33a20e4763",
- "html_url": "https://github.com/kody-w/rapp-alpha/commit/8c9964aed07501ce64831469b2098c33a20e4763",
+ "sha": "6d81fdab3814097ba42dd40bbd923bbc1d5ea32e",
+ "html_url": "https://github.com/kody-w/rapp-alpha/commit/6d81fdab3814097ba42dd40bbd923bbc1d5ea32e",
  "commit": {
-  "message": "promote: nightly -> alpha\n\nPromote the Nightly-qualified shared payload through commit 125e733 after successful main preflight.\n\nNightly preflight: https://github.com/kody-w/rapp-nightly/actions/runs/33276081975\n\nReviewed-by: Copilot CLI GPT-5.6 Sol (agreed round 12)\n\nCo-authored-by: Copilot <223556219+Copilot@users.noreply.github.com>",
+  "message": "reseed: restore production baseline\n\nReset the Alpha shared payload to exact Grail main bytes; preserve the prior tip at archive/pre-pristine-20260830.\n\nCo-authored-by: Copilot <223556219+Copilot@users.noreply.github.com>\nCopilot-Session: 690f70cf-c834-40ff-b050-37382ea46b0d",
   "author": {
    "name": "Kody Wildfeuer",
    "email": "kwildfeuer@me.com",
-   "date": "2026-08-29T17:29:32-04:00"
+   "date": "2026-08-30T08:30:23-04:00"
   },
   "committer": {
    "name": "Kody Wildfeuer",
    "email": "kwildfeuer@me.com",
-   "date": "2026-08-29T17:29:32-04:00"
+   "date": "2026-08-30T08:30:23-04:00"
   }
  }
 }

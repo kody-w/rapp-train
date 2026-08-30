@@ -1,17 +1,17 @@
 {
- "sha": "702ec5cff4181cf8e7964f301dd4b60d6efd3f4d",
- "html_url": "https://github.com/kody-w/rapp-canary/commit/702ec5cff4181cf8e7964f301dd4b60d6efd3f4d",
+ "sha": "62ba2ee8efa2d44f6ed32c017f28be926027a57e",
+ "html_url": "https://github.com/kody-w/rapp-canary/commit/62ba2ee8efa2d44f6ed32c017f28be926027a57e",
  "commit": {
-  "message": "ops: establish constitutional Preprod seaworthiness\n\nAdd the protected Preprod control plane and enforce RAPP/1 rev-10 Article 15: the Grail Brainstem is immutable and every ring/release stage fails closed on kernel drift.\n\nThe standard preflight is green. The Autonomous Pre-Grail Matrix is intentionally red because current ring Brainstem bytes differ from the constitutional v0.6.16 Grail pin; this merge installs the guard that exposes and blocks that condition.\n\nCo-authored-by: Copilot <223556219+Copilot@users.noreply.github.com>\nCopilot-Session: 690f70cf-c834-40ff-b050-37382ea46b0d",
+  "message": "reseed: production runway plus one Canary test\n\nRestore the full shared payload to exact production bytes, preserve all prior work at feature/post-grail-changes, and leave one shared Canary delta: the immutable Grail SHA-256 test.\n\nCo-authored-by: Copilot <223556219+Copilot@users.noreply.github.com>\nCopilot-Session: 690f70cf-c834-40ff-b050-37382ea46b0d",
   "author": {
    "name": "Kody Wildfeuer",
    "email": "kwildfeuer@me.com",
-   "date": "2026-08-30T01:31:49-04:00"
+   "date": "2026-08-30T08:44:58-04:00"
   },
   "committer": {
    "name": "Kody Wildfeuer",
    "email": "kwildfeuer@me.com",
-   "date": "2026-08-30T01:31:49-04:00"
+   "date": "2026-08-30T08:44:58-04:00"
   }
  }
 }
