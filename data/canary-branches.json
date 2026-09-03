@@ -96,6 +96,14 @@
   "protected": false
  },
  {
+  "name": "fix/installer-loading-pass",
+  "commit": {
+   "sha": "9b397c33405289a0ed9a6eebe0186abd14603803",
+   "url": "https://api.github.com/repos/kody-w/rapp-canary/commits/9b397c33405289a0ed9a6eebe0186abd14603803"
+  },
+  "protected": false
+ },
+ {
   "name": "fix/installer-trust",
   "commit": {
    "sha": "15f0a3ebb4f78af30a6ecdcdbcef891da862e403",
