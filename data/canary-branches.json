@@ -152,6 +152,14 @@
   "protected": false
  },
  {
+  "name": "fix/serve-time-identity",
+  "commit": {
+   "sha": "53529ef4f7430d39f40dc3fea5bb7a06140fd403",
+   "url": "https://api.github.com/repos/kody-w/rapp-canary/commits/53529ef4f7430d39f40dc3fea5bb7a06140fd403"
+  },
+  "protected": false
+ },
+ {
   "name": "fix/shim-parity",
   "commit": {
    "sha": "1f39c449dfdb9b92844daca92ec67ae24239941f",
