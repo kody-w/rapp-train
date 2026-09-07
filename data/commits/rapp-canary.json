@@ -1,17 +1,17 @@
 {
- "sha": "ddfdddc9adea874c02a0a9bd3a99485e90d484e3",
- "html_url": "https://github.com/kody-w/rapp-canary/commit/ddfdddc9adea874c02a0a9bd3a99485e90d484e3",
+ "sha": "5359b9a4ef8a8079a88efb1bcc4464ce1af4cc4c",
+ "html_url": "https://github.com/kody-w/rapp-canary/commit/5359b9a4ef8a8079a88efb1bcc4464ce1af4cc4c",
  "commit": {
-  "message": "release(canary): publish agent-led onboarding only\n\nPreserve prior Canary work, re-seed the shared payload from production, and publish only the approved five-file onboarding layer. Include the explicitly approved ring-owned matrix repair without changing installer or Brainstem runtime bytes. No downstream or production promotion.\n\nCo-authored-by: Copilot <223556219+Copilot@users.noreply.github.com>\nCopilot-Session: 03b13af4-cc91-4e8a-bc90-27c534c44333",
+  "message": "Merge persistent Markdown skills and RAPP/1 receipts into Canary\n\nCanary feature preflight passed: https://github.com/kody-w/rapp-canary/actions/runs/34147556068\n\nCo-authored-by: Copilot <223556219+Copilot@users.noreply.github.com>",
   "author": {
    "name": "Kody Wildfeuer",
    "email": "kwildfeuer@me.com",
-   "date": "2026-09-06T16:38:01-04:00"
+   "date": "2026-09-07T13:29:22-04:00"
   },
   "committer": {
    "name": "Kody Wildfeuer",
    "email": "kwildfeuer@me.com",
-   "date": "2026-09-06T16:38:01-04:00"
+   "date": "2026-09-07T13:29:22-04:00"
   }
  }
 }
