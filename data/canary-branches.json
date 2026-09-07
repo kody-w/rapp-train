@@ -112,6 +112,14 @@
   "protected": false
  },
  {
+  "name": "fix/canary-skill-setup-20260907",
+  "commit": {
+   "sha": "029433c638310a48d4ed4e5e08e593a46ff7c9e7",
+   "url": "https://api.github.com/repos/kody-w/rapp-canary/commits/029433c638310a48d4ed4e5e08e593a46ff7c9e7"
+  },
+  "protected": false
+ },
+ {
   "name": "fix/flight-port-collision",
   "commit": {
    "sha": "9b962cd8e8ccde03311047d797e9979dc83320e8",
@@ -242,8 +250,8 @@
  {
   "name": "main",
   "commit": {
-   "sha": "5359b9a4ef8a8079a88efb1bcc4464ce1af4cc4c",
-   "url": "https://api.github.com/repos/kody-w/rapp-canary/commits/5359b9a4ef8a8079a88efb1bcc4464ce1af4cc4c"
+   "sha": "3ada5f6e75533f88e92d548a13942ca19ad1dc79",
+   "url": "https://api.github.com/repos/kody-w/rapp-canary/commits/3ada5f6e75533f88e92d548a13942ca19ad1dc79"
   },
   "protected": true
  },

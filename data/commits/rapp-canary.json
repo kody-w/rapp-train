@@ -1,17 +1,17 @@
 {
- "sha": "5359b9a4ef8a8079a88efb1bcc4464ce1af4cc4c",
- "html_url": "https://github.com/kody-w/rapp-canary/commit/5359b9a4ef8a8079a88efb1bcc4464ce1af4cc4c",
+ "sha": "3ada5f6e75533f88e92d548a13942ca19ad1dc79",
+ "html_url": "https://github.com/kody-w/rapp-canary/commit/3ada5f6e75533f88e92d548a13942ca19ad1dc79",
  "commit": {
-  "message": "Merge persistent Markdown skills and RAPP/1 receipts into Canary\n\nCanary feature preflight passed: https://github.com/kody-w/rapp-canary/actions/runs/34147556068\n\nCo-authored-by: Copilot <223556219+Copilot@users.noreply.github.com>",
+  "message": "Merge published Canary skill and safe setup-only flight support\n\nPreflight passed: https://github.com/kody-w/rapp-canary/actions/runs/34154245670\nRing checks passed: https://github.com/kody-w/rapp-canary/actions/runs/34154245728\n\nCo-authored-by: Copilot <223556219+Copilot@users.noreply.github.com>",
   "author": {
    "name": "Kody Wildfeuer",
    "email": "kwildfeuer@me.com",
-   "date": "2026-09-07T13:29:22-04:00"
+   "date": "2026-09-07T15:14:47-04:00"
   },
   "committer": {
    "name": "Kody Wildfeuer",
    "email": "kwildfeuer@me.com",
-   "date": "2026-09-07T13:29:22-04:00"
+   "date": "2026-09-07T15:14:47-04:00"
   }
  }
 }
