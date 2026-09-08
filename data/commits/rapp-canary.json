@@ -1,17 +1,17 @@
 {
- "sha": "3ada5f6e75533f88e92d548a13942ca19ad1dc79",
- "html_url": "https://github.com/kody-w/rapp-canary/commit/3ada5f6e75533f88e92d548a13942ca19ad1dc79",
+ "sha": "da91e66df702965d03a1ca6fa6d955d0d78d4ebd",
+ "html_url": "https://github.com/kody-w/rapp-canary/commit/da91e66df702965d03a1ca6fa6d955d0d78d4ebd",
  "commit": {
-  "message": "Merge published Canary skill and safe setup-only flight support\n\nPreflight passed: https://github.com/kody-w/rapp-canary/actions/runs/34154245670\nRing checks passed: https://github.com/kody-w/rapp-canary/actions/runs/34154245728\n\nCo-authored-by: Copilot <223556219+Copilot@users.noreply.github.com>",
+  "message": "merge: replace LearnNew with stable aibast agent, drop skills entirely (preflight green: run 34167731544)",
   "author": {
    "name": "Kody Wildfeuer",
    "email": "kwildfeuer@me.com",
-   "date": "2026-09-07T15:14:47-04:00"
+   "date": "2026-09-07T18:48:10-04:00"
   },
   "committer": {
    "name": "Kody Wildfeuer",
    "email": "kwildfeuer@me.com",
-   "date": "2026-09-07T15:14:47-04:00"
+   "date": "2026-09-07T18:48:10-04:00"
   }
  }
 }
