@@ -1,17 +1,17 @@
 {
- "sha": "6d81fdab3814097ba42dd40bbd923bbc1d5ea32e",
- "html_url": "https://github.com/kody-w/rapp-alpha/commit/6d81fdab3814097ba42dd40bbd923bbc1d5ea32e",
+ "sha": "44be78a718cab332937a4fe5fd8c99c7e8bc573e",
+ "html_url": "https://github.com/kody-w/rapp-alpha/commit/44be78a718cab332937a4fe5fd8c99c7e8bc573e",
  "commit": {
-  "message": "reseed: restore production baseline\n\nReset the Alpha shared payload to exact Grail main bytes; preserve the prior tip at archive/pre-pristine-20260830.\n\nCo-authored-by: Copilot <223556219+Copilot@users.noreply.github.com>\nCopilot-Session: 690f70cf-c834-40ff-b050-37382ea46b0d",
+  "message": "promote: tested Astra adapter from Nightly to Alpha\n\nExact tested Nightly payload; Alpha preflight is green. A fresh verified local v0.6.16 snapshot is ready for the Alpha upgrade rehearsal. Grail is unchanged pending final owner confirmation.\n\nCo-authored-by: Copilot <223556219+Copilot@users.noreply.github.com>\nCopilot-Session: c1e1d70e-f19d-4de3-90c6-028bd22e5130",
   "author": {
    "name": "Kody Wildfeuer",
    "email": "kwildfeuer@me.com",
-   "date": "2026-08-30T08:30:23-04:00"
+   "date": "2026-09-13T18:14:02-04:00"
   },
   "committer": {
    "name": "Kody Wildfeuer",
    "email": "kwildfeuer@me.com",
-   "date": "2026-08-30T08:30:23-04:00"
+   "date": "2026-09-13T18:14:02-04:00"
   }
  }
 }

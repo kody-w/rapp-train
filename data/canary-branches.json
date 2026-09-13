@@ -250,8 +250,8 @@
  {
   "name": "main",
   "commit": {
-   "sha": "da91e66df702965d03a1ca6fa6d955d0d78d4ebd",
-   "url": "https://api.github.com/repos/kody-w/rapp-canary/commits/da91e66df702965d03a1ca6fa6d955d0d78d4ebd"
+   "sha": "4290a8257486ec05222afd9256ab306e26c3bb3a",
+   "url": "https://api.github.com/repos/kody-w/rapp-canary/commits/4290a8257486ec05222afd9256ab306e26c3bb3a"
   },
   "protected": true
  },
@@ -276,6 +276,14 @@
   "commit": {
    "sha": "66cf8e2a83f5c7338ac949d89026fe95ac1ca8c6",
    "url": "https://api.github.com/repos/kody-w/rapp-canary/commits/66cf8e2a83f5c7338ac949d89026fe95ac1ca8c6"
+  },
+  "protected": false
+ },
+ {
+  "name": "release/astra-adapter-canary",
+  "commit": {
+   "sha": "3173a4d89703c9c9c96ad7ea11b520211891d76a",
+   "url": "https://api.github.com/repos/kody-w/rapp-canary/commits/3173a4d89703c9c9c96ad7ea11b520211891d76a"
   },
   "protected": false
  },

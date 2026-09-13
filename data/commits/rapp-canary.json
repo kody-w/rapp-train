@@ -1,17 +1,17 @@
 {
- "sha": "da91e66df702965d03a1ca6fa6d955d0d78d4ebd",
- "html_url": "https://github.com/kody-w/rapp-canary/commit/da91e66df702965d03a1ca6fa6d955d0d78d4ebd",
+ "sha": "4290a8257486ec05222afd9256ab306e26c3bb3a",
+ "html_url": "https://github.com/kody-w/rapp-canary/commit/4290a8257486ec05222afd9256ab306e26c3bb3a",
  "commit": {
-  "message": "merge: replace LearnNew with stable aibast agent, drop skills entirely (preflight green: run 34167731544)",
+  "message": "merge: prepare v0.6.17 Astra adapter upgrade train\n\nCanary is synchronized with current Grail; the frozen kernel is unchanged. The owner requested progressive local v0.6.16 upgrade rehearsals through Canary, Nightly, Alpha, and Beta before final production confirmation.\n\nCo-authored-by: Copilot <223556219+Copilot@users.noreply.github.com>\nCopilot-Session: c1e1d70e-f19d-4de3-90c6-028bd22e5130",
   "author": {
    "name": "Kody Wildfeuer",
    "email": "kwildfeuer@me.com",
-   "date": "2026-09-07T18:48:10-04:00"
+   "date": "2026-09-13T17:25:39-04:00"
   },
   "committer": {
    "name": "Kody Wildfeuer",
    "email": "kwildfeuer@me.com",
-   "date": "2026-09-07T18:48:10-04:00"
+   "date": "2026-09-13T17:25:39-04:00"
   }
  }
 }

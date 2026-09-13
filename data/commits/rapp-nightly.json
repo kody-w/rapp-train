@@ -1,17 +1,17 @@
 {
- "sha": "0b68d80c3ec9e0d869aa334bb05dd1c9fabace69",
- "html_url": "https://github.com/kody-w/rapp-nightly/commit/0b68d80c3ec9e0d869aa334bb05dd1c9fabace69",
+ "sha": "27d62617a1d805d5648c0827c4d863359f307efe",
+ "html_url": "https://github.com/kody-w/rapp-nightly/commit/27d62617a1d805d5648c0827c4d863359f307efe",
  "commit": {
-  "message": "reseed: restore production baseline\n\nReset the Nightly shared payload to exact Grail main bytes; preserve the prior tip at archive/pre-pristine-20260830.\n\nCo-authored-by: Copilot <223556219+Copilot@users.noreply.github.com>\nCopilot-Session: 690f70cf-c834-40ff-b050-37382ea46b0d",
+  "message": "promote: tested Astra adapter from Canary to Nightly\n\nExact tested Canary payload; Nightly preflight is green. The local v0.6.16 snapshot will be restored before the Nightly upgrade rehearsal. Grail requires final owner confirmation.\n\nCo-authored-by: Copilot <223556219+Copilot@users.noreply.github.com>\nCopilot-Session: c1e1d70e-f19d-4de3-90c6-028bd22e5130",
   "author": {
    "name": "Kody Wildfeuer",
    "email": "kwildfeuer@me.com",
-   "date": "2026-08-30T08:30:21-04:00"
+   "date": "2026-09-13T17:53:28-04:00"
   },
   "committer": {
    "name": "Kody Wildfeuer",
    "email": "kwildfeuer@me.com",
-   "date": "2026-08-30T08:30:21-04:00"
+   "date": "2026-09-13T17:53:28-04:00"
   }
  }
 }
