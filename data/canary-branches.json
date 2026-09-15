@@ -250,8 +250,8 @@
  {
   "name": "main",
   "commit": {
-   "sha": "4290a8257486ec05222afd9256ab306e26c3bb3a",
-   "url": "https://api.github.com/repos/kody-w/rapp-canary/commits/4290a8257486ec05222afd9256ab306e26c3bb3a"
+   "sha": "7ac5c778b43337909ed439c5e954bdc8f4460b7c",
+   "url": "https://api.github.com/repos/kody-w/rapp-canary/commits/7ac5c778b43337909ed439c5e954bdc8f4460b7c"
   },
   "protected": true
  },
@@ -300,6 +300,14 @@
   "commit": {
    "sha": "fb656dc26b3d9c8e281b398a2f1c8982f3d016ce",
    "url": "https://api.github.com/repos/kody-w/rapp-canary/commits/fb656dc26b3d9c8e281b398a2f1c8982f3d016ce"
+  },
+  "protected": false
+ },
+ {
+  "name": "stash/v0.6.17-astra-train-2026-09-15",
+  "commit": {
+   "sha": "4290a8257486ec05222afd9256ab306e26c3bb3a",
+   "url": "https://api.github.com/repos/kody-w/rapp-canary/commits/4290a8257486ec05222afd9256ab306e26c3bb3a"
   },
   "protected": false
  }
