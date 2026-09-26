@@ -25,6 +25,15 @@ jobs:
     runs-on: ${{ matrix.os }}
     timeout-minutes: 15
     steps:
+      - uses: actions/checkout@v4
+
+      - name: Offline flight startup regressions
+        shell: bash
+        run: |
+          bash -n flight.sh
+          bash -n scripts/test_flight.sh
+          bash scripts/test_flight.sh
+
       - name: Live public flight one-liner
         shell: bash
         run: |
