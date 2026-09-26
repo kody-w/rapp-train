@@ -1,17 +1,17 @@
 {
- "sha": "49db80c8c6b6caa7647369beaf477d374a8f293c",
- "html_url": "https://github.com/kody-w/rapp-installer/commit/49db80c8c6b6caa7647369beaf477d374a8f293c",
+ "sha": "0e43ee580e78c150b1c59002456822d2e779388e",
+ "html_url": "https://github.com/kody-w/rapp-installer/commit/0e43ee580e78c150b1c59002456822d2e779388e",
  "commit": {
-  "message": "Merge pull request #46 from kody-w/copilot/rapp-at-x-article-xxv\n\nFollow RAR marketplace Article XXV",
+  "message": "Merge pull request #50 from kody-w/night-shift/installer-38-preflight-identity\n\nfix: reject stale-server success in local preflight",
   "author": {
    "name": "Kody Wildfeuer",
    "email": "kwildfeuer@me.com",
-   "date": "2026-08-28T00:35:43-04:00"
+   "date": "2026-09-26T17:11:13-04:00"
   },
   "committer": {
    "name": "Kody Wildfeuer",
    "email": "kwildfeuer@me.com",
-   "date": "2026-08-28T00:35:43-04:00"
+   "date": "2026-09-26T17:11:13-04:00"
   }
  }
 }
