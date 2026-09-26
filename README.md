@@ -79,3 +79,17 @@ release act — the tooling is structurally incapable of it.
 This repo is only the deck: the actual install endpoints are each ring repo's
 own GitHub Pages (rendered ring identity — never the raw-URL copies, which
 carry grail identity by design and install the wrong repo).
+
+## Offline flight checks
+
+Run these manual checks from the repository root with Bash and Python 3:
+
+```bash
+bash -n flight.sh
+bash -n scripts/test_flight.sh
+bash scripts/test_flight.sh
+```
+
+The regression harness mocks commands, sockets, and PID liveness. It makes no
+network requests, starts no real flights or listeners, and sends no host-process
+signals. These offline checks are not wired into CI.
