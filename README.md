@@ -1,5 +1,9 @@
 # 🚂 rapp-train — the RAPP release-train flight deck
 
+<!-- rapp1:network-header:start -->
+[![RAPP/1](https://kody-w.github.io/rapp-hive-public/portfolio/badges/rapp-train.svg)](https://github.com/kody-w/rapp-hive-public/blob/main/portfolio/repos/rapp-train.md) · **New to RAPP?** [Start here: get your Brainstem →](https://github.com/kody-w/rapp-installer#start-here)
+<!-- rapp1:network-header:end -->
+
 **https://kody-w.github.io/rapp-train/** — every ring of the RAPP Brainstem
 release train, joinable or sandbox-testable from any machine with one pasted
 line. Feature branches on [rapp-canary](https://github.com/kody-w/rapp-canary)
