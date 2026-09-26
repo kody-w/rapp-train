@@ -31,6 +31,37 @@ FLIGHT_HOME="$HOME/.rapp-flight/$SLUG"
 REPO_URL="https://github.com/kody-w/rapp-$RING.git"
 
 echo "🛫 flight: $RING @ $BRANCH -> $FLIGHT_HOME (port $FLIGHT_PORT)"
+if ! python3 - "$FLIGHT_PORT" <<'PY'
+import errno
+import socket
+import sys
+
+try:
+    port = int(sys.argv[1])
+    if not 1 <= port <= 65535:
+        raise ValueError("port must be between 1 and 65535")
+    addresses = [(socket.AF_INET, "0.0.0.0")]
+    if socket.has_ipv6:
+        addresses.append((socket.AF_INET6, "::"))
+    for family, address in addresses:
+        try:
+            with socket.socket(family, socket.SOCK_STREAM) as probe:
+                probe.bind((address, port))
+        except OSError as error:
+            if family == socket.AF_INET6 and error.errno in (
+                errno.EAFNOSUPPORT, errno.EPROTONOSUPPORT, errno.EADDRNOTAVAIL
+            ):
+                continue
+            raise
+except (OSError, ValueError) as error:
+    print(f"Port check failed: {error}", file=sys.stderr)
+    sys.exit(1)
+PY
+then
+    echo "✗ flight port $FLIGHT_PORT is unavailable; no flight files or listeners were changed." >&2
+    echo "  Stop the listener yourself only if you own it, or rerun with FLIGHT_PORT set to a free port." >&2
+    exit 1
+fi
 if [ -f "$FLIGHT_HOME/flight.pid" ] && kill -0 "$(cat "$FLIGHT_HOME/flight.pid")" 2>/dev/null; then
     kill "$(cat "$FLIGHT_HOME/flight.pid")"; sleep 1
 fi
@@ -61,18 +92,30 @@ if [ ! -d "$FLIGHT_HOME/venv" ]; then python3 -m venv "$FLIGHT_HOME/venv"; fi
 (
     cd "$FLIGHT_HOME/render/rapp_brainstem"
     HOME="$FLIGHT_HOME" PORT="$FLIGHT_PORT" \
-        nohup "$FLIGHT_HOME/venv/bin/python" brainstem.py > "$FLIGHT_HOME/flight.log" 2>&1 &
-    echo $! > "$FLIGHT_HOME/flight.pid"
-)
+        exec nohup "$FLIGHT_HOME/venv/bin/python" brainstem.py > "$FLIGHT_HOME/flight.log" 2>&1
+) &
+FLIGHT_PID=$!
+echo "$FLIGHT_PID" > "$FLIGHT_HOME/flight.pid"
+
+require_flight_alive() {
+    if ! kill -0 "$FLIGHT_PID" 2>/dev/null; then
+        echo "✗ flight process $FLIGHT_PID exited during startup (log below) — please report this on kody-w/rapp-$RING" >&2
+        tail -5 "$FLIGHT_HOME/flight.log" >&2
+        exit 1
+    fi
+}
 for _ in $(seq 1 20); do
     sleep 1
+    require_flight_alive
     if curl -fsS "http://localhost:$FLIGHT_PORT/health" >/dev/null 2>&1; then
+        require_flight_alive
         echo "✅ $RING@$SHA is flying: http://localhost:$FLIGHT_PORT"
         echo "   auth (optional): open the UI and use Login — GitHub device flow"
         echo "   stop:  kill \$(cat $FLIGHT_HOME/flight.pid)"
         echo "   wipe:  rm -rf $FLIGHT_HOME"
         exit 0
     fi
+    require_flight_alive
 done
 tail -5 "$FLIGHT_HOME/flight.log" >&2
 echo "✗ flight did not answer /health in 20s (log above) — please report this on kody-w/rapp-$RING" >&2

@@ -55,7 +55,17 @@ curl -fsSL https://kody-w.github.io/rapp-train/flight.sh | bash -s -- canary    
 curl -fsSL https://kody-w.github.io/rapp-train/flight.sh | bash -s -- canary <branch>   # one feature
 ```
 
-Done when: `✅ ... is flying: http://localhost:7075`. Stop/wipe commands are printed.
+If the port is already occupied (including by an already running flight), the
+launcher fails before changing flight files and leaves the listener untouched.
+Stop the existing listener yourself only if you own it, or choose a free port
+by setting `FLIGHT_PORT` on the **bash side** of the pipe:
+
+```bash
+curl -fsSL https://kody-w.github.io/rapp-train/flight.sh | FLIGHT_PORT=7076 bash -s -- canary
+```
+
+Done when: `✅ ... is flying: http://localhost:7075` (or your chosen port).
+Stop/wipe commands are printed.
 If it prints `render refused this flight` — that's a real finding (Scenario 4 upstream), report it.
 
 ## Scenario 2 — Join a ring (this machine's real install)
