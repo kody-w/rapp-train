@@ -168,6 +168,14 @@
   "protected": false
  },
  {
+  "name": "fix/ring-tests-hermetic-provider-profile",
+  "commit": {
+   "sha": "6c62f1b98ec8cef630834039caa893b52554f710",
+   "url": "https://api.github.com/repos/kody-w/rapp-canary/commits/6c62f1b98ec8cef630834039caa893b52554f710"
+  },
+  "protected": false
+ },
+ {
   "name": "fix/scrub-and-docs",
   "commit": {
    "sha": "2dc3570f26da171f85c38960141914912d3b2b93",
@@ -292,6 +300,14 @@
   "commit": {
    "sha": "62ba2ee8efa2d44f6ed32c017f28be926027a57e",
    "url": "https://api.github.com/repos/kody-w/rapp-canary/commits/62ba2ee8efa2d44f6ed32c017f28be926027a57e"
+  },
+  "protected": false
+ },
+ {
+  "name": "reseed/grail-0e43ee5",
+  "commit": {
+   "sha": "87565a3db9f899a9e9fcd7db84e911a1ea0a10ae",
+   "url": "https://api.github.com/repos/kody-w/rapp-canary/commits/87565a3db9f899a9e9fcd7db84e911a1ea0a10ae"
   },
   "protected": false
  },
