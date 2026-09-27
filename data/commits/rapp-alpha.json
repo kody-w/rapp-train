@@ -1,17 +1,17 @@
 {
- "sha": "44be78a718cab332937a4fe5fd8c99c7e8bc573e",
- "html_url": "https://github.com/kody-w/rapp-alpha/commit/44be78a718cab332937a4fe5fd8c99c7e8bc573e",
+ "sha": "63dcd397f5722231977585f4cd6171c115a3809b",
+ "html_url": "https://github.com/kody-w/rapp-alpha/commit/63dcd397f5722231977585f4cd6171c115a3809b",
  "commit": {
-  "message": "promote: tested Astra adapter from Nightly to Alpha\n\nExact tested Nightly payload; Alpha preflight is green. A fresh verified local v0.6.16 snapshot is ready for the Alpha upgrade rehearsal. Grail is unchanged pending final owner confirmation.\n\nCo-authored-by: Copilot <223556219+Copilot@users.noreply.github.com>\nCopilot-Session: c1e1d70e-f19d-4de3-90c6-028bd22e5130",
+  "message": "promote: nightly -> alpha (payload c072f08e0e14, nightly 62ccf49) (#4)\n\npromote_ring.py (rapp-canary .ring/tools at 72709a5) wrote the exact shared\nGit blobs of kody-w/rapp-nightly 62ccf49a29ee27a2e68371ef9662a42a3beefae3 onto alpha main 44be78a718cab332937a4fe5fd8c99c7e8bc573e,\npreserving alpha's .ring/ overlay and workflows. Grail kernel bytes verified before and after (bd55a7f0).\n.ring/ring.json rewrite counts follow the incoming payload (RUNBOOK section 1).\n\nCo-authored-by: rappter1 <rappter1@icloud.com>\nCo-authored-by: Copilot <223556219+Copilot@users.noreply.github.com>\nCopilot-Session: 6959251d-7c0e-42aa-a64d-6e358392e3b0",
   "author": {
    "name": "Kody Wildfeuer",
    "email": "kwildfeuer@me.com",
-   "date": "2026-09-13T18:14:02-04:00"
+   "date": "2026-09-27T16:22:15-04:00"
   },
   "committer": {
    "name": "Kody Wildfeuer",
    "email": "kwildfeuer@me.com",
-   "date": "2026-09-13T18:14:02-04:00"
+   "date": "2026-09-27T16:22:15-04:00"
   }
  }
 }

@@ -1,17 +1,17 @@
 {
- "sha": "27d62617a1d805d5648c0827c4d863359f307efe",
- "html_url": "https://github.com/kody-w/rapp-nightly/commit/27d62617a1d805d5648c0827c4d863359f307efe",
+ "sha": "62ccf49a29ee27a2e68371ef9662a42a3beefae3",
+ "html_url": "https://github.com/kody-w/rapp-nightly/commit/62ccf49a29ee27a2e68371ef9662a42a3beefae3",
  "commit": {
-  "message": "promote: tested Astra adapter from Canary to Nightly\n\nExact tested Canary payload; Nightly preflight is green. The local v0.6.16 snapshot will be restored before the Nightly upgrade rehearsal. Grail requires final owner confirmation.\n\nCo-authored-by: Copilot <223556219+Copilot@users.noreply.github.com>\nCopilot-Session: c1e1d70e-f19d-4de3-90c6-028bd22e5130",
+  "message": "promote: canary -> nightly (payload c072f08e0e14, canary 72709a5) (#4)\n\npromote_ring.py (rapp-canary .ring/tools at 72709a5) wrote the exact shared\nGit blobs of kody-w/rapp-canary 72709a50b74eb94320d34d554f96d06da699957c onto nightly main 27d62617a1d805d5648c0827c4d863359f307efe,\npreserving nightly's .ring/ overlay and workflows. Grail kernel bytes verified before and after (bd55a7f0).\n.ring/ring.json rewrite counts follow the incoming payload (RUNBOOK section 1).\n\nCo-authored-by: rappter1 <rappter1@icloud.com>\nCo-authored-by: Copilot <223556219+Copilot@users.noreply.github.com>\nCopilot-Session: 6959251d-7c0e-42aa-a64d-6e358392e3b0",
   "author": {
    "name": "Kody Wildfeuer",
    "email": "kwildfeuer@me.com",
-   "date": "2026-09-13T17:53:28-04:00"
+   "date": "2026-09-27T16:10:52-04:00"
   },
   "committer": {
    "name": "Kody Wildfeuer",
    "email": "kwildfeuer@me.com",
-   "date": "2026-09-13T17:53:28-04:00"
+   "date": "2026-09-27T16:10:52-04:00"
   }
  }
 }

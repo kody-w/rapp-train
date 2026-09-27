@@ -1,17 +1,17 @@
 {
- "sha": "7ac5c778b43337909ed439c5e954bdc8f4460b7c",
- "html_url": "https://github.com/kody-w/rapp-canary/commit/7ac5c778b43337909ed439c5e954bdc8f4460b7c",
+ "sha": "deedfff21c38a5617cf0a1cca658758af2850a58",
+ "html_url": "https://github.com/kody-w/rapp-canary/commit/deedfff21c38a5617cf0a1cca658758af2850a58",
  "commit": {
-  "message": "sync: engine, installers and docs = grail v0.6.16 (rapp-installer 49db80c)\n\nCanary's v0.6.17 Astra adapter train is preserved on stash/v0.6.17-astra-train-2026-09-15.\nTrain tooling (.ring, workflows, tools, .gitattributes, .claude-plugin) is untouched.\n\nCo-Authored-By: Claude Fable 5.1 <noreply@anthropic.com>",
+  "message": "Merge pull request #19 from kody-w/evidence/qualification-36348482918\n\nevidence: archive pre-grail qualification 36348482918 (GATE PASS, payload c072f08e0e14)",
   "author": {
    "name": "Kody Wildfeuer",
    "email": "kwildfeuer@me.com",
-   "date": "2026-09-15T16:35:44-04:00"
+   "date": "2026-09-27T16:56:51-04:00"
   },
   "committer": {
    "name": "Kody Wildfeuer",
    "email": "kwildfeuer@me.com",
-   "date": "2026-09-15T16:35:44-04:00"
+   "date": "2026-09-27T16:56:51-04:00"
   }
  }
 }
